@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="600" viewBox="0 0 1600 600">
+  <defs>
+    <linearGradient id="g1" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#4f46e5"/>
+      <stop offset="100%" stop-color="#9333ea"/>
+    </linearGradient>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#111827"/>
+    </linearGradient>
+    <linearGradient id="glow" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#7c3aed" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#22d3ee" stop-opacity="0.3"/>
+    </linearGradient>
+    <filter id="softBlur" x="-10%" y="-10%" width="120%" height="120%">
+      <feGaussianBlur stdDeviation="18"/>
+    </filter>
+  </defs>
+
+  <!-- Sky background -->
+  <rect width="1600" height="600" fill="url(#sky)"/>
+
+  <!-- Decorative diagonal gradient glow -->
+  <rect x="-100" y="-50" width="900" height="300" fill="url(#g1)" opacity="0.25" transform="rotate(-12)" filter="url(#softBlur)"/>
+  <rect x="900" y="300" width="900" height="300" fill="url(#g1)" opacity="0.18" transform="rotate(8 1200 450)" filter="url(#softBlur)"/>
+
+  <!-- Dotted grid -->
+  <g opacity="0.18" fill="#94a3b8">
+    <g id="dotRow">
+      <circle r="1.5" cx="0" cy="0"/>
+    </g>
+    <g id="grid">
+      <use href="#dotRow" x="100" y="60"/>
+    </g>
+    <script type="application/ecmascript"><![CDATA[
+      // no-op placeholder for static hosts
+    ]]></script>
+  </g>
+
+  <!-- City skyline silhouette -->
+  <g transform="translate(0, 360)">
+    <rect x="40"  y="40"  width="80"  height="160" rx="6" fill="#1f2937"/>
+    <rect x="130" y="0"   width="70"  height="200" rx="6" fill="#111827"/>
+    <rect x="210" y="60"  width="90"  height="140" rx="6" fill="#0b1220"/>
+    <rect x="320" y="20"  width="110" height="180" rx="6" fill="#1f2937"/>
+    <rect x="450" y="50"  width="80"  height="150" rx="6" fill="#0b1220"/>
+    <rect x="540" y="10"  width="95"  height="190" rx="6" fill="#111827"/>
+    <rect x="650" y="80"  width="75"  height="120" rx="6" fill="#1f2937"/>
+    <rect x="740" y="35"  width="105" height="165" rx="6" fill="#0b1220"/>
+    <rect x="865" y="65"  width="90"  height="135" rx="6" fill="#111827"/>
+    <rect x="970" y="25"  width="110" height="175" rx="6" fill="#1f2937"/>
+    <rect x="1100" y="70" width="80"  height="130" rx="6" fill="#0b1220"/>
+    <rect x="1190" y="0"  width="95"  height="200" rx="6" fill="#111827"/>
+    <rect x="1300" y="50" width="90"  height="150" rx="6" fill="#1f2937"/>
+    <rect x="1400" y="20" width="110" height="180" rx="6" fill="#0b1220"/>
+  </g>
+
+  <!-- Data flow lines -->
+  <path d="M0,320 C200,280 400,420 600,360 C800,300 1000,380 1200,340 C1350,310 1500,350 1600,330" stroke="url(#glow)" stroke-width="3" fill="none"/>
+  <path d="M0,340 C220,300 420,460 620,380 C820,320 1020,400 1220,360 C1380,330 1520,360 1600,350" stroke="url(#g1)" stroke-width="2" opacity="0.6" fill="none"/>
+
+  <!-- Title watermark (very subtle) -->
+  <text x="50" y="120" font-family="'Segoe UI',Roboto,Arial" font-size="42" fill="#a78bfa" opacity="0.18">RealtyAi • Intelligent Real Estate Analytics</text>
+</svg>

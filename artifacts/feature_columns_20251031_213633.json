@@ -1,0 +1,11 @@
+{
+  "feature_columns": [
+    "PctOfHomesDecreasingInValues_AllHomes",
+    "PctOfHomesIncreasingInValues_AllHomes",
+    "ZHVI_3bedroom",
+    "ZHVI_BottomTier",
+    "ZHVI_MiddleTier",
+    "ZHVI_SingleFamilyResidence",
+    "ZHVI_TopTier"
+  ]
+}

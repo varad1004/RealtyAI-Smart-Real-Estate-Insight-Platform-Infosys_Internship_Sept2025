@@ -1,0 +1,6 @@
+*.csv
+*.zip
+*.pkl
+*.model
+data/
+processed_data/

@@ -1,0 +1,50 @@
+{
+  "timestamp": "20251031_213633",
+  "targets": [
+    "ZHVI_AllHomes",
+    "ZHVIPerSqft_AllHomes"
+  ],
+  "date_col": "Date",
+  "entity_cols": [
+    "RegionName"
+  ],
+  "feature_columns_artifact": "c:\\Users\\USER\\OneDrive\\Desktop\\realtyAI\\artifacts\\feature_columns_20251031_213633.json",
+  "results": {
+    "ZHVI_AllHomes": {
+      "val": {
+        "rmse": 37199.53808230148,
+        "mae": 3766.339678493685,
+        "r2": 0.9538839323555778
+      },
+      "test": {
+        "rmse": 51671.81070739943,
+        "mae": 5417.053585421728,
+        "r2": 0.9457616349642353
+      },
+      "cutoff_date": "2013-08-31",
+      "model_json": "c:\\Users\\USER\\OneDrive\\Desktop\\realtyAI\\models\\xgb_city_ZHVI_AllHomes_20251031_213633.json",
+      "scaler": "c:\\Users\\USER\\OneDrive\\Desktop\\realtyAI\\artifacts\\scaler_ZHVI_AllHomes_20251031_213633.joblib",
+      "test_predictions_csv": "c:\\Users\\USER\\OneDrive\\Desktop\\realtyAI\\models\\predictions_test_ZHVI_AllHomes_20251031_213633.csv",
+      "model_joblib": "c:\\Users\\USER\\OneDrive\\Desktop\\realtyAI\\models\\xgb_city_ZHVI_AllHomes_20251031_213633.joblib",
+      "test_split_csv": "c:\\Users\\USER\\OneDrive\\Desktop\\realtyAI\\models\\test_split_ZHVI_AllHomes_20251031_213633.csv"
+    },
+    "ZHVIPerSqft_AllHomes": {
+      "val": {
+        "rmse": 23.350043551636098,
+        "mae": 12.270181523170889,
+        "r2": 0.9091760796298747
+      },
+      "test": {
+        "rmse": 32.423172984250186,
+        "mae": 15.239486107283357,
+        "r2": 0.8972727169892862
+      },
+      "cutoff_date": "2013-08-31",
+      "model_json": "c:\\Users\\USER\\OneDrive\\Desktop\\realtyAI\\models\\xgb_city_ZHVIPerSqft_AllHomes_20251031_213633.json",
+      "scaler": "c:\\Users\\USER\\OneDrive\\Desktop\\realtyAI\\artifacts\\scaler_ZHVIPerSqft_AllHomes_20251031_213633.joblib",
+      "test_predictions_csv": "c:\\Users\\USER\\OneDrive\\Desktop\\realtyAI\\models\\predictions_test_ZHVIPerSqft_AllHomes_20251031_213633.csv",
+      "model_joblib": "c:\\Users\\USER\\OneDrive\\Desktop\\realtyAI\\models\\xgb_city_ZHVIPerSqft_AllHomes_20251031_213633.joblib",
+      "test_split_csv": "c:\\Users\\USER\\OneDrive\\Desktop\\realtyAI\\models\\test_split_ZHVIPerSqft_AllHomes_20251031_213633.csv"
+    }
+  }
+}
